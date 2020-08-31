@@ -1,4 +1,4 @@
-import java.util.Vector;
+import java.util.ArrayList;
 
 public interface CS211PriorityQueueInterface<V extends Comparable<V>> {
 
@@ -9,7 +9,7 @@ public interface CS211PriorityQueueInterface<V extends Comparable<V>> {
 	
 	public V remove();
 	
-	public void build(Vector<V> words);
+	public void build(ArrayList<V> words);
 	
 	public boolean isEmpty();
 }
