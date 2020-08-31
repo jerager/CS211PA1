@@ -12,4 +12,6 @@ public interface CS211PriorityQueueInterface<V extends Comparable<V>> {
 	public void build(ArrayList<V> words);
 	
 	public boolean isEmpty();
+	
+	public boolean writePQ(); 
 }
