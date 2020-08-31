@@ -13,5 +13,5 @@ public interface CS211PriorityQueueInterface<V extends Comparable<V>> {
 	
 	public boolean isEmpty();
 	
-	public boolean writePQ(); 
+	public void writePQ(); 
 }
