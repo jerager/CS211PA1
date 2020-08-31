@@ -1,7 +1,7 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
-import java.util.Vector;
+import java.util.ArrayList;
 
 public class ReadFile {
 	private String fileName;
@@ -10,7 +10,7 @@ public class ReadFile {
 		fileName = s;
 	}
 	
-	public Vector<Word> process() {
+	public ArrayList<Word> process() {
 		
 		File f = new File(fileName);
 		Scanner sc = null;
@@ -23,7 +23,7 @@ public class ReadFile {
 			System.exit(-1);
 		}
 		
-		Vector<Word> toR = new Vector<Word>();
+		ArrayList<Word> toR = new ArrayList<Word>();
 		
 		while (sc.hasNext()) {
 			toR.add(new Word(sc.next(),(int) (Math.random()*100)));
@@ -35,7 +35,7 @@ public class ReadFile {
 public static void main(String[] args) {
 		
 	ReadFile rf = new ReadFile("TextFile1.txt");
-	Vector<Word> list = rf.process();
+	ArrayList<Word> list = rf.process();
 	for (Word w : list) {
 		System.out.println("testing " +w);
 	}
